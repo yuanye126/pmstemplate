@@ -1,0 +1,283 @@
+%
+% Vorlage für studentische Arbeiten am 
+% LFE PMS
+% 
+% Weitergabe an Dritte ohne Rücksprache
+% ist nicht gestattet
+% 
+% Mail: alexander.pohl@pms.ifi.lmu.de
+%
+\documentclass{scrbook}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+
+\newcommand{\thesisTitle}{My Very own Thesis} 
+\newcommand{\thesisSubTitle}{Thinking \& Writing} 
+\newcommand{\typeOfThesis}{Bachelorarbeit} 
+\newcommand{\studentName}{Alexander Pohl} 
+\newcommand{\supervisor}{Prof. Dr. Fran\c{c}ois Bry} 
+\newcommand{\advisor}{Alexander Pohl} 
+\newcommand{\location}{München} 
+\newcommand{\dateOfHandover}{21. Februar 2011}
+
+
+\makeatletter
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+%\usepackage{tocstyle}
+%\usetocstyle{allwithdot}
+\usepackage{changepage}
+\usepackage[Sonny]{sty/fncychapleo}
+
+
+\usepackage{mathptmx}  % times roman, including math (where possible)
+\usepackage{palatino}  % palatino, including math (where possible)
+\usepackage{helvet}    % helvetica
+
+\usepackage{wallpaper}
+\usepackage{scrpage2}
+\pagestyle{scrheadings}
+\clearscrheadfoot
+\ofoot[\pagemark]{\pagemark}
+\ihead{\headmark}
+\usepackage[a4paper,%
+  head=4cm,height=220mm,bottom=4cm,left=4cm,right=3cm]{geometry}
+
+\parindent0cm
+%\usepackage{babel}
+\makeatother
+
+
+
+\begin{document}
+
+%
+% Use \ThisCenterWallPaper for printing 
+% as (due to the paper feed margin)
+% the logo won't be positioned correctly
+% 
+\begin{titlepage}   
+  \thispagestyle{empty} 
+  \begin{adjustwidth}{3em}{3em} 
+    \begin{center} 
+        \vspace{5cm} 
+        {\huge INSTITUT F\"UR INFORMATIK\\} 
+        {\Large der Ludwig-Maximilians-Universit\"at M\"unchen} 
+    \end{center} 
+    \vspace{2cm} 
+    %\ThisCenterWallPaper{0.5}{logo/LMU-Siegel-trans.png}
+    \ThisLRCornerWallPaper{0.5}{logo/LMU-Siegel-halb-trans.png} 
+    \begin{center} 
+      \vspace*{15em} 
+      \Huge \textsc \thesisTitle \\[.5em] \hrule \vspace*{.5em} 
+      \huge \thesisSubTitle 
+    \end{center} 
+    \vspace*{2em} 
+    \begin{center} 
+      \huge \studentName 
+    \end{center} 
+    \vspace*{12em} 
+    \begin{center} 
+      \Large\textbf{\typeOfThesis}
+    \end{center} 
+    \vspace*{.5em} 
+    \begin{center} 
+      \begin{tabular}{ll} 
+        \textbf{Aufgabensteller} & \supervisor \\ 
+        \textbf{Betreuer}        & \supervisor, \\
+                                 & \advisor \\
+                                 & \\
+        \textbf{Abgabe am}       & \dateOfHandover                  
+      \end{tabular} 
+    \end{center} 
+  \end{adjustwidth} 
+  \cleardoublepage 
+\end{titlepage} 
+\pagenumbering{roman}
+
+
+\chapter*{Erklärung}
+
+Hiermit versichere ich, dass ich die vorliegende Arbeit selbständig
+verfasst habe und keine anderen als die angegebenen Hilfsmittel verwendet
+habe.
+
+\vspace*{9em}
+
+
+\location, den \dateOfHandover \hfill \studentName
+
+
+\chapter*{Abstract}
+
+The abstract of your thesis in English. Provides information about the topic of your work and gives a concise overview of the results. Write it with a reader in mind who wants to find out if your thesis is of interest to her. (About $\frac{1}{2}$ - 1 pages long)
+
+
+\chapter*{Zusammenfassung}
+
+Die deutsche Zusammenfassung ist eine eins-zu-eins-Übersetzung der
+englischen Zusammenfassung.
+
+
+
+\tableofcontents{}
+
+
+
+\cleardoublepage
+\pagenumbering{arabic}
+
+
+\chapter{Introduction}
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet \cite{MartinEbner2008,McMillan1986,Yardi2008}.
+
+
+\section{Related Work}
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.
+
+
+\chapter*{Appendix}
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+sed diam voluptua. At vero eos et accusam et justo duo dolores et
+ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata
+sanctus est Lorem ipsum dolor sit amet.
+
+\bibliographystyle{amsplain}
+\cleardoublepage\addcontentsline{toc}{chapter}{\bibname}\bibliography{bib/references}
+
+\end{document}
